@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
 
-type Grade = 'A'|'B'|'E';
+type Grade = 'A'|'B'|'F';
 
 @Component({
   standalone: true,
@@ -9,6 +9,9 @@ type Grade = 'A'|'B'|'E';
   styles: ``
 })
 export class ControlFlowComponent {
+
+  public frameworks = signal(['Angular', 'React', 'Vue']);
+  public frameworks2 = signal([]);
 
   public showContent = signal(false);
 
